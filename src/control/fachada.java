@@ -39,7 +39,15 @@ public class fachada {
 			id++;
 		}
 		DaoPaciente.borrar();
-	
+	int idDos=0;
+		while (idDos<150) {
+		Paciente añadido=DaoModificado.buscar(id);
+			if (añadido!=null) {
+				DaoPaciente.add(añadido);
+			}
+			idDos++;
+		}
+		DaoModificado.borrar();
 	}
 	
 }
