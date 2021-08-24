@@ -27,11 +27,14 @@ public class GrabadorSerializado<T> implements IGrabador<T> {
 			adaptadorW.writeObject(dto);
 			adaptadorW.close();
 			flujoW.close();
+			System.out.println("se ha creado");
 			estado = true;
 		} catch (Exception e) {
 			estado = false;
 		}
 		return estado;
 	}
+	
+	
 
 }

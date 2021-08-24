@@ -102,7 +102,6 @@ public class ParaUI extends UI {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				
-				
 			}
 		});
 		

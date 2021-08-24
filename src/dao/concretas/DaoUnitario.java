@@ -24,4 +24,13 @@ public class DaoUnitario<T, K> {
 		return (T) daoArchivo.recupera(posicion);
 	}
 	
+	public boolean borrar() {
+		return daoArchivo.borrar();
+	}
+	
 }
+
+
+
+
+
